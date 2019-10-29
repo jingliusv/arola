@@ -27,3 +27,52 @@ h1, h2, h3, h4, h5{
     color: var(--mainGreen);
     font-size: 2rem;
 }
+
+.default-background{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(3, 25, 38, 0.5), rgba(3, 25, 38, 0.5));
+    background-position: center;
+    background-size: cover;
+    opacity: 1 !important;
+}
+
+.default-background h1{
+    width: 80%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.about-background{
+    min-height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(70, 129, 137, 0.7), rgba(70, 129, 137, 0.7));
+    background-position: center;
+    background-size: cover;
+    opacity: 1 !important;
+}
+
+.btn-yellow{
+    background: var(--mainYellow);
+    transition: all .4s ease;
+}
+
+.btn-yellow:hover{
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+}
+
+.footer{
+    background: var(--mainBlue);
+    color: var(--mainYellow);
+}
+
+.footer svg{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+

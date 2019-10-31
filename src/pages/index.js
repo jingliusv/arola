@@ -10,7 +10,7 @@ import Blog from "../components/home/Blog";
 export default ({data}) => (
     <Layout>
         <Hero img={data.img.childImageSharp.fluid} title="discover the beauty of plants" styleClass="default-background">
-            <p className="text-center text-white text-capitalize py-4 lead">We help you to create a lovely green place.</p>
+            <p className="text-center text-white text-capitalize py-4 lead">We help you to create a lovely green environment.</p>
         </Hero>
         <Info />
         <Products />

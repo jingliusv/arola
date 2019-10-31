@@ -29,7 +29,7 @@ const Contact = () => {
                         </div>
 
                         <div className="form-group">
-                            <button className="btn btn-yellow btn-block text-uppercase my-4">Send to us</button>
+                            <button className="btn btn-yellow btn-block text-uppercase my-4 py-3">Send</button>
                         </div>
                     </form>
                 </div>

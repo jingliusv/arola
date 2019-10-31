@@ -11,11 +11,11 @@ const Footer = () => {
         <footer className="footer py-3">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 text-capitalize text-center">
+                    <div className="col-md-6 text-capitalize footer-box">
                         <p>All rights reserved &copy;{getYear()}</p>
                     </div>
-                    <div className="col-md-6 text-capitalize text-center">
-                        <FaFacebookSquare/> <FaInstagram/>
+                    <div className="col-md-6 text-capitalize text-right footer-box">
+                        <FaFacebookSquare className="mr-2"/> <FaInstagram/>
                     </div>
                 </div>
             </div>

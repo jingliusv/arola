@@ -5,6 +5,7 @@
     --mainGreen: #468189;
     --mainYellow: #F4E9CD;
     --mainWhite: #fff;
+    --mainGrey: #F8F9FA;
 }
 
 body{
@@ -18,8 +19,38 @@ h1, h2, h3, h4, h5{
     letter-spacing: 0.25rem;
 }
 
+.navbar {
+    min-height: 80px;
+}
+  
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+        padding-top: 26.5px;
+        padding-bottom: 26.5px;
+        line-height: 27px;
+    }
+}
+
 .text-yellow{
     color: var(--mainYellow);
+}
+
+.text-green{
+    color: var(--mainGreen);
 }
 
 .cart-icon{
@@ -29,11 +60,12 @@ h1, h2, h3, h4, h5{
 }
 
 .default-background{
-    min-height: 80vh;
+    min-height: 65vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(3, 25, 38, 0.5), rgba(3, 25, 38, 0.5));
+    background-image: linear-gradient(rgba(3, 25, 38, 0.8), rgba(3, 25, 38, 0.8));
     background-position: center;
     background-size: cover;
     opacity: 1 !important;
@@ -66,6 +98,20 @@ h1, h2, h3, h4, h5{
     color: var(--mainWhite);
 }
 
+.btn-outline-green{
+    border: 1px solid var(--mainGreen);
+    transition: all .5s ease;
+}
+
+.btn-outline-green:hover{
+    background: var(--mainGreen);
+    color: var(--mainYellow);
+}
+
+.btn-outline-green:not(:last-child){
+    margin-right: 1.5rem;
+}
+
 .footer{
     background: var(--mainBlue);
     color: var(--mainYellow);
@@ -75,4 +121,10 @@ h1, h2, h3, h4, h5{
     width: 1.6rem;
     height: 1.6rem;
 }
+
+section.products{
+    background: var(--mainGrey);
+}
+
+
 

@@ -1,13 +1,17 @@
 import React from "react"
-import { Link, graphql} from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Hero from '../components/inc/Hero';
 import Info from "../components/home/Info";
+import Products from "../components/home/products";
 
 export default ({data}) => (
     <Layout>
-        <Hero img={data.img.childImageSharp.fluid} title="discover the beauty of plants" styleClass="default-background" />
+        <Hero img={data.img.childImageSharp.fluid} title="discover the beauty of plants" styleClass="default-background">
+            <p className="text-center text-white text-capitalize py-4 lead">We help you to create a lovely green place.</p>
+        </Hero>
         <Info />
+        <Products />
     </Layout>
 )
 
@@ -20,5 +24,5 @@ export const query = graphql`
             }
         }
     }
-  }
+}
 `;

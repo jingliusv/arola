@@ -28,7 +28,7 @@ export default class Navbar extends Component {
         return (
             <nav className="navbar navbar-expand-sm bg-light navbar-light">
                 <div className="container">
-                    <Link to="/" className="navbar-brand text-uppercase">Arola</Link>
+                    <Link to="/" className="navbar-brand text-uppercase font-weight-bold">Arola</Link>
                     <button className="navbar-toggler navbar-toggler-right" type="button" onClick={this.navbarHandler}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -43,7 +43,7 @@ export default class Navbar extends Component {
                                     )
                                 })
                             }
-                            <li className="nav-item ml-sm-3">
+                            <li className="nav-item ml-sm-3 d-flex align-items-center">
                                 <FaCartArrowDown className="cart-icon" />
                             </li>
                         </ul>

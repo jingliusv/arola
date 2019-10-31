@@ -62,7 +62,7 @@ const Products = () => {
                 <Title title="Plants that we love" />
 
                 <div className="row mb-5">
-                    <div className="col-10 mx-auto text-center">
+                    <div className="col-12 mx-auto text-center">
                         {categories.map((category, index) => {
                             return (
                                 <button 

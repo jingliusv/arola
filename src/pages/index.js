@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Hero from '../components/inc/Hero';
 import Info from "../components/home/Info";
 import Products from "../components/home/products";
+import Contact from "../components/home/Contact";
 
 export default ({data}) => (
     <Layout>
@@ -12,6 +13,7 @@ export default ({data}) => (
         </Hero>
         <Info />
         <Products />
+        <Contact />
     </Layout>
 )
 

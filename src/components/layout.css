@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5{
     height: 1.6rem;
 }
 
-section.products{
+section.products, section.contact{
     background: var(--mainGrey);
 }
 

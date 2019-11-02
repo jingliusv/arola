@@ -38,14 +38,14 @@ const Products = () => {
         }
         `
     )
+    const tempCategories = getCategories(data.plants.edges);
      
-    const [items] = useState(data.plants.edges);
-    const [categories] = useState(getCategories(data.plants.edges));
+    const [categories, setCategories] = useState(tempCategories);
     const [plants, setPlants] = useState(data.plants.edges);
 
     const filterProducts = (category) => {
         let filteredItems;
-        const allItems = [...items];
+        const allItems = [...data.plants.edges];
         if(category === "all"){
             setPlants(allItems);
         } else {
@@ -63,7 +63,8 @@ const Products = () => {
 
                 <div className="row mb-5">
                     <div className="col-12 mx-auto text-center">
-                        {categories.map((category, index) => {
+                        {
+                            categories.map((category, index) => {
                             return (
                                 <button 
                                     key={index} 
